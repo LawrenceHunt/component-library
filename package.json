@@ -2,13 +2,14 @@
   "name": "component-lib",
   "version": "0.1.0",
   "description": "React library to npm tutorial",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-  "test": "test",
-  "build": "babel lib -d build",
-  "lint": "eslint lib/**; exit 0",
-  "lint:watch": "esw -w lib/**",
-  "prepublish": "npm run build"
+    "test": "test",
+    "build": "babel lib -d build",
+    "build:watch": "babel lib -w -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
